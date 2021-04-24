@@ -5,11 +5,15 @@
 使用notepad编写HelloWorld程序后缀为.java
 
 ```java
+// 单行注释
 public class HelloWorld{
 	public static void main(String[] args){
 		System.out.println("Hello World!");
 	}
 }
+/*  
+多行注释
+*/
 ```
 
 ## javac编译
