@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>index</title>
+      <title>02_HelloWorld</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -261,39 +261,51 @@ pre[data-line] .line-highlight[data-end]:after {
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0">Java&#x5B66;&#x4E60;&#x7B14;&#x8BB0;</h1>
+      <ul>
+<li><a href="#helloworld">HelloWorld</a>
+<ul>
+<li><a href="#javac%E7%BC%96%E8%AF%91">javac&#x7F16;&#x8BD1;</a></li>
+<li><a href="#java%E8%BF%90%E8%A1%8C">Java&#x8FD0;&#x884C;</a></li>
+</ul>
+</li>
+</ul>
+<h1 class="mume-header" id="helloworld">HelloWorld</h1>
 
-<h2 class="mume-header" id="%E4%B8%80-java%E5%9F%BA%E7%A1%80">&#x4E00;&#x3001;Java&#x57FA;&#x7840;</h2>
+<p>&#x4F7F;&#x7528;notepad&#x7F16;&#x5199;HelloWorld&#x7A0B;&#x5E8F;&#x540E;&#x7F00;&#x4E3A;.java</p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token comment">// &#x5355;&#x884C;&#x6CE8;&#x91CA;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span><span class="token punctuation">{</span>
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*  
+&#x591A;&#x884C;&#x6CE8;&#x91CA;
+*/</span>
+</pre><h2 class="mume-header" id="javac%E7%BC%96%E8%AF%91">javac&#x7F16;&#x8BD1;</h2>
 
-<h3 class="mume-header" id="00-%E8%A1%A5%E5%85%8501_java%E5%9F%BA%E7%A1%8000_%E8%A1%A5%E5%85%85html"><a href="./01_Java%E5%9F%BA%E7%A1%80/00_%E8%A1%A5%E5%85%85.html">00&#x3001;&#x8865;&#x5145;</a></h3>
+<ul>
+<li>cmd&#x8FDB;&#x5165;HelloWorld.java&#x6240;&#x5728;&#x76EE;&#x5F55;</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">G:<span class="token punctuation">\</span>HelloMD<span class="token punctuation">\</span>GyHelloJava<span class="token punctuation">\</span>arc<span class="token operator">&gt;</span>dir
+ &#x9A71;&#x52A8;&#x5668; G &#x4E2D;&#x7684;&#x5377;&#x662F; &#x8BFE;&#x7A0B;+&#x9879;&#x76EE;
+ &#x5377;&#x7684;&#x5E8F;&#x5217;&#x53F7;&#x662F; B87D-52B4
 
-<h3 class="mume-header" id="01-java%E6%A6%82%E5%BF%B501_java%E5%9F%BA%E7%A1%8001_java%E6%A6%82%E5%BF%B5html"><a href="./01_Java%E5%9F%BA%E7%A1%80/01_java%E6%A6%82%E5%BF%B5.html">01&#x3001;java&#x6982;&#x5FF5;</a></h3>
+ G:<span class="token punctuation">\</span>HelloMD<span class="token punctuation">\</span>GyHelloJava<span class="token punctuation">\</span>arc &#x7684;&#x76EE;&#x5F55;
 
-<h3 class="mume-header" id="02-helloworld01_java%E5%9F%BA%E7%A1%8002_helloworldhtml"><a href="./01_Java%E5%9F%BA%E7%A1%80/02_HelloWorld.html">02&#x3001;HelloWorld</a></h3>
+<span class="token number">2021</span>/04/24  <span class="token number">16</span>:52    <span class="token operator">&lt;</span>DIR<span class="token operator">&gt;</span>          <span class="token builtin class-name">.</span>
+<span class="token number">2021</span>/04/24  <span class="token number">16</span>:52    <span class="token operator">&lt;</span>DIR<span class="token operator">&gt;</span>          <span class="token punctuation">..</span>
+<span class="token number">2021</span>/04/24  <span class="token number">16</span>:52               <span class="token number">112</span> HelloWorld.java
+               <span class="token number">1</span> &#x4E2A;&#x6587;&#x4EF6;            <span class="token number">112</span> &#x5B57;&#x8282;
+               <span class="token number">2</span> &#x4E2A;&#x76EE;&#x5F55; <span class="token number">42,403</span>,332,096 &#x53EF;&#x7528;&#x5B57;&#x8282;
+</pre><pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token comment"># &#x4F7F;&#x7528;cmd javac&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF0C;&#x751F;&#x6210;.class&#x6587;&#x4EF6;&#x3002;&#x6CE8;&#x610F;&#x6B64;&#x5904;&#x6709;&#x540E;&#x7F00;&#x3002;&#x6BCF;&#x6B21;&#x4FEE;&#x6539;java&#x4EE3;&#x7801;&#x540E;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x3002;</span>
+G:<span class="token punctuation">\</span>HelloMD<span class="token punctuation">\</span>GyHelloJava<span class="token punctuation">\</span>arc<span class="token operator">&gt;</span>javac HelloWorld.java
+</pre><p><img src="./../images/05_HelloWorld.jpg" alt></p>
+<h2 class="mume-header" id="java%E8%BF%90%E8%A1%8C">Java&#x8FD0;&#x884C;</h2>
 
-<h3 class="mume-header" id="03-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B501_java%E5%9F%BA%E7%A1%8003_%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5html"><a href="./01_Java%E5%9F%BA%E7%A1%80/03_%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.html">03&#x3001;&#x57FA;&#x7840;&#x6982;&#x5FF5;</a></h3>
-
-<h2 class="mume-header" id="%E4%BA%8C-maven%E9%A1%B9%E7%9B%AE">&#x4E8C;&#x3001;Maven&#x9879;&#x76EE;</h2>
-
-<h3 class="mume-header" id="00-maven%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B00_maven%E9%A1%B9%E7%9B%AE00_maven%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8Bhtml"><a href="./00_Maven%E9%A1%B9%E7%9B%AE/00_Maven%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B.html">00&#x3001;Maven&#x9879;&#x76EE;&#x7B80;&#x4ECB;</a></h3>
-
-<h3 class="mume-header" id="01-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEjdk%E5%8F%8Amaven00_maven%E9%A1%B9%E7%9B%AE01_%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEjdk%E5%8F%8Amavenhtml"><a href="./00_Maven%E9%A1%B9%E7%9B%AE/01_%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEJDK%E5%8F%8AMaven.html">01&#x3001;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x914D;&#x7F6E;JDK&#x53CA;Maven</a></h3>
-
-<h3 class="mume-header" id="02-%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE00_maven%E9%A1%B9%E7%9B%AE02_%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AEhtml"><a href="./00_Maven%E9%A1%B9%E7%9B%AE/02_%E5%88%9B%E5%BB%BAMaven%E9%A1%B9%E7%9B%AE.html">02&#x3001;&#x521B;&#x5EFA;Maven&#x9879;&#x76EE;</a></h3>
-
-<h3 class="mume-header" id="03-testng_assert%E6%96%AD%E8%A8%8000_maven%E9%A1%B9%E7%9B%AE03_testng_assert%E6%96%AD%E8%A8%80html"><a href="./00_Maven%E9%A1%B9%E7%9B%AE/03_TestNG_Assert%E6%96%AD%E8%A8%80.html">03&#x3001;TestNG_Assert&#x65AD;&#x8A00;</a></h3>
-
-<h3 class="mume-header" id="04-testng_%E6%B3%A8%E8%A7%A3%E5%8F%8A%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F00_maven%E9%A1%B9%E7%9B%AE04_testng_%E6%B3%A8%E8%A7%A3%E5%8F%8A%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9Fhtml"><a href="./00_Maven%E9%A1%B9%E7%9B%AE/04_TestNG_%E6%B3%A8%E8%A7%A3%E5%8F%8A%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html">04&#x3001;TestNG_&#x6CE8;&#x89E3;&#x53CA;&#x751F;&#x547D;&#x5468;&#x671F;</a></h3>
-
-<h3 class="mume-header" id="05-json00_maven%E9%A1%B9%E7%9B%AE05_jsonhtml"><a href="./00_Maven%E9%A1%B9%E7%9B%AE/05_Json.html">05&#x3001;Json</a></h3>
-
-<h3 class="mume-header" id="06-list00_maven%E9%A1%B9%E7%9B%AE06_listhtml"><a href="./00_Maven%E9%A1%B9%E7%9B%AE/06_List.html">06&#x3001;List</a></h3>
-
-<h3 class="mume-header" id="07-map00_maven%E9%A1%B9%E7%9B%AE07_maphtml"><a href="./00_Maven%E9%A1%B9%E7%9B%AE/07_Map.html">07&#x3001;Map</a></h3>
-
-<h3 class="mume-header" id="08-yaml"><a href>08&#x3001;yaml</a></h3>
-
-
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token comment"># &#x4F7F;&#x7528;cmd java&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x3002;&#x6CE8;&#x610F;&#x6B64;&#x5904;&#x6CA1;&#x6709;&#x540E;&#x7F00;&#x3002;</span>
+G:<span class="token punctuation">\</span>HelloMD<span class="token punctuation">\</span>GyHelloJava<span class="token punctuation">\</span>arc<span class="token operator">&gt;</span>java HelloWorld
+Hello World<span class="token operator">!</span>
+</pre>
       </div>
       
       

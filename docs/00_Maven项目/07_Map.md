@@ -19,6 +19,7 @@ public class HelloMap {
         //获取大小
         System.out.println(map.size());
 
+
         //插入元素
         map.put("key1", "value1");
         map.put("key2", "value2");
